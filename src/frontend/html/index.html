@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Anon Reader</title>
+		<link rel="stylesheet" href="../css/style.css" />
+	</head>
+
+	<body>
+		<!-- Header -->
+		<header>
+			<div class="logo">Anon Reader</div>
+			<div class="clock" id="clock">00:00:00</div>
+			<div class="menu">&#9776;</div>
+		</header>
+
+		<!-- Main Content -->
+		<main>
+			<!-- Left: Directory Choosing -->
+			<div class="left">
+				<h3>Choose Files</h3>
+				<br />
+				<input type="file" id="fileInput" webkitdirectory multiple />
+				<br />
+				<br />
+				<div id="directoryListing">
+					<!-- Files and folders will be listed here -->
+				</div>
+			</div>
+
+			<!-- Middle: File Viewer -->
+			<div class="middle">
+				<h3>File Viewer</h3>
+                <br>
+				<div class="file-viewer" id="fileViewer">
+					Select a file from the directory to view its content.
+				</div>
+			</div>
+
+			<!-- Right: Sidebar -->
+			<div class="right">
+				<h3>Sidebar</h3>
+				<button onclick="alert('Action 1')">Action 1</button>
+				<button onclick="alert('Action 2')">Action 2</button>
+				<button onclick="alert('Action 3')">Action 3</button>
+			</div>
+		</main>
+
+		<script src="../js/main.js"></script>
+	</body>
+</html>
